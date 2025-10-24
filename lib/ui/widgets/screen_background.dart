@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 class ScreenBackground extends StatelessWidget {
   const ScreenBackground({super.key, required this.child});
@@ -9,8 +10,8 @@ class ScreenBackground extends StatelessWidget {
   Widget build(BuildContext context) {
     return Stack(
       children: [
-        Image.asset(
-          'assets/images/bg.jpg',
+        SvgPicture.asset(
+          'assets/images/background.svg',
           width: double.maxFinite,
           height: double.maxFinite,
           fit: BoxFit.cover,
